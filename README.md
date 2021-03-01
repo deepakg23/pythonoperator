@@ -10,6 +10,7 @@ For more information refer [kopf](https://kopf.readthedocs.io/en/stable/)
 ## Getting Started
 
 Clone the repo and follow below installation instructions.
+You would need Kubernetes along with kubectl to work with the example. I used Docker Desktop but you can use KIND or MINIKUBE equivalent.
 
 ### Installing
 
