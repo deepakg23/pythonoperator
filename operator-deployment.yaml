@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: simple-operator
+spec:
+ selector:
+  matchLabels:
+   app: simple-operator
+ template:
+  metadata:
+   labels:
+    app: simple-operator
+  spec:
+   serviceAccountName: simple-operator   
+   containers:
+   - image: simple-operator
+     name: simple-operator
+     imagePullPolicy: Never
